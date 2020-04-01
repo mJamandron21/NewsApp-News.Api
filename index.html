@@ -4,27 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News App using Api</title>
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+   
     
    
 </head>
 <body>
 
-    <nav >
-    <div >
-        <a href="index.html">News Search & Bookmarks</a>
-        <ul>
-            <a id="topNews" href="#">Top News</a>
-            <a href="#">Bookmarks</a>
+    <nav class="navbar-fixed">
+    <div class="navbar navbar-expand navbar-dark " style="background: darkslategray;">
+        <a class="navbar-brand" href="index.html">News Search & Bookmarks</a>
+        <ul class="navbar-text text-light d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <a class="text-decoration-none text-light col-8" id="topNews" href="#">Top News</a>
+            <a class="text-decoration-none text-light col-10" href="#">Bookmarks</a>
 
-            <button class="btn"  ><i class="fas fa-toggle-on"></i></button>
+            <button class="btn" aria-hidden="true" ><i class="fas fa-toggle-on"></i></button>
         
         </ul>
 
     </div>
 </nav>
 
-        <nav >
-                    <div >
+        <nav class="container-fluid navbar mt-auto align-content-center justify-content-center" style=" opacity: 0.8; background:teal;">
+                    <div class="form-group mt-3 col-3">
                         <select class="form-control" id="selectCountry">
                             <option  selected="selected">Select Country</option>
                             <option  value="us">United State of America</option>
@@ -41,7 +44,7 @@
                             <option value="id">Indonesia</option>
                         </select> 
                     </div>
-                    <div >
+                    <div class="form-group mt-3 col-3">
                         <select class="form-control" id="selectCategory">
                             <option  value= " " selected="selected">All Category</option>
                             <option  value="business">Business</option>
@@ -54,12 +57,12 @@
                         </select> 
                     </div>
 
-                    <div >
+                    <div class=" form-group mt-3 col-3">
                         <input type="text" class="form-control " id="searchKeyword" placeholder="Search..">
                         
                     </div>
 
-                    <div >
+                    <div class=" form-inline col-auto">
                         <button type="submit" id="btnSearch" class="btn" aria-hidden="true"><i class="fas fa-search"></i></button>
                     </div>
 
@@ -76,7 +79,10 @@
             </div>
 
         </main>
+     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     
-   
 </body>
 </html>
