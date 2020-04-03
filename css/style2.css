@@ -1,0 +1,9 @@
+
+@media (max-width: 575.9px) {
+    .col-xs-12{
+            justify-items: center;
+            width: 100%;
+            display: block;
+            padding-left: 30px;
+     } 
+  }
