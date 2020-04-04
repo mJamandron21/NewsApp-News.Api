@@ -18,6 +18,11 @@ nav.container-fluid{
 #topNav .defaultMode .navbar-brand, .navbar-item{
     color: white;
 }
+#topNav.defaultMode .myToggler{
+
+    color: transparent;
+    font-size: 28px;
+}
 
 /* LIGHTMODE */
 #topNav.lightMode .navbar, .container-fluid{
@@ -26,4 +31,16 @@ nav.container-fluid{
 }
 #topNav.lightMode .navbar-brand, .nav-item{
     color: black;
+}
+
+#topNav.lightMode .myToggler{
+
+    color: black;
+    font-size: 28px;
+    padding-top: 2px;
+}
+
+#topNav.lightMode .myTogglerNav{
+
+    border-color: black;
 }

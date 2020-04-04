@@ -5,10 +5,12 @@ changeTheme.addEventListener("click", e =>{
         changeTheme.className = "fa fa-toggle-off"
         topNav.className = "lightMode"
         
+        
     }
     else{
         changeTheme.className = "fa fa-toggle-on"
         topNav.className = "defaultMode"
+        
     }
     e.preventDefault()
 })
