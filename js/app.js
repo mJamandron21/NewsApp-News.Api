@@ -19,15 +19,15 @@ async function getNews(){
 
     const { articles , totalResults } = newsList
     let li = ''
-    let result = `You have a total result of ${totalResults}`
+    
+    let result =`<p class="h4">You have a total result of ${totalResults}</p>`
     
     articles.forEach(article => {
         li += `
-        <div class="container-fluid justify-content-center">
-        <div class="card-mb-3">
-                <div class="card">
-                  <img class="card-img-top" style="max-height: 250px;" src="${article.urlToImage}" alt="Card image cap">
-                  <div class="card-body">
+      
+        <div class="card-block">
+                  <img class="card-img-top" style="height: 250px;" src="${article.urlToImage}" alt="Card image cap">
+                  <div class="card-body" style="height:450px;">
                     <h5 class="card-title">${article.title}</h5>
                     <p class="card-text">${article.source.name}</p>
                     <p class="card-text">${article.content}</p>
@@ -38,10 +38,9 @@ async function getNews(){
                   <div class="card-footer">
                     <small class="text-muted">Published at ${article.publishedAt}</small>
                   </div>
-                </div>
         </div>
         
-        </div>
+      
         `
     });
 
