@@ -5,6 +5,11 @@ nav.container-fluid{
     background: teal;
     opacity: 0.8;
 }
+
+footer.card-footer{
+    background: teal;
+    opacity: 0.8;
+}
 .toggleBtn{
     padding: 8px;
     border: 0;
@@ -15,7 +20,7 @@ nav.container-fluid{
     transition: 0.25s ease-in-out;
     background: darkslategray;
 }
-#topNav .defaultMode .navbar-brand, .navbar-item{
+#topNav .defaultMode .navbar-brand, .navbar-item, #myFooterText{
     color: white;
 }
 #topNav.defaultMode .myToggler{
@@ -29,9 +34,19 @@ nav.container-fluid{
     transition: 0.25s ease-in-out;
     background: white;
 }
-#topNav.lightMode .navbar-brand, .nav-item{
+
+#topNav.lightMode footer{
+    transition: 0.25s ease-in-out;
+    background: white;
+}
+
+#topNav.lightMode .navbar-brand, .nav-item, #myFooterText{
     color: black;
 }
+
+/* #topNav.lightmode #myFooterText{
+    color: black;
+} */
 
 #topNav.lightMode .myToggler{
 
