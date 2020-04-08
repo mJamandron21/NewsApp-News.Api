@@ -11,7 +11,7 @@
 </head>
 <body id="topNav" class="defaultMode" >
 
-    <nav class="navbar navbar-expand-sm navbar-expand-lg navbar-expand-md navbar-dark justify-content-between">
+    <nav class="topNavBar navbar navbar-expand-sm navbar-expand-lg navbar-expand-md navbar-dark justify-content-between">
             
             <a class="navbar-brand" href="index.html">News Search & Bookmarks</a>
             
@@ -23,14 +23,14 @@
         
                 <a class="navbar-brand" id="topNews" href="index.html">Top News</a>            
                 <a class="navbar-brand" href="bookmark.html">Bookmarks</a>
-                <button class="toggleBtn" aria-hidden="true" ><i class="fa fa-toggle-on" id="switch"></i></button>               
-            
+                <button class="toggleBtn" aria-hidden="true" ><i class="fa fa-toggle-on toggleSwitch" id="switch"></i></button>               
+                
             </div>
     </nav>
 
-        <nav class="container-fluid navbar mt-xl-auto justify-content-xl-around justify-content-lg-around justify-content-md-center justify-content-sm-center">
+        <nav class="lowerNavBar container-fluid navbar justify-content-xl-around justify-content-lg-around justify-content-md-center justify-content-sm-center">
             <div class="row col-xs-12">
-                <div class="form-group mt-xl-3 mt-lg-3 col col-xl-4 col-lg-3 col-md-11 col-sm-12">
+                <div class="form-group mt-3 mt-lg-3 col col-xl-4 col-lg-3 col-md-11 col-sm-12">
                     <select class="form-control" id="selectCountry">
                         <option  value= "">All Country</option>
                         <option  value="us">United State of America</option>
@@ -47,7 +47,7 @@
                         <option value="id">Indonesia</option>
                     </select> 
                 </div>
-                <div class="form-group mt-xl-3 mt-lg-3 col col-xl-4 col-lg-3 col-md-11 col-sm-12">
+                <div class="form-group mt-3 mt-lg-3 col col-xl-4 col-lg-3 col-md-11 col-sm-12">
                     <select class="form-control" id="selectCategory">
                         <option  value= "" selected="selected">All Category</option>
                         <option  value="business">Business</option>
@@ -60,28 +60,37 @@
                     </select> 
                 </div>
                 
-                <div class=" form-group mt-xl-3 mt-lg-3 col col-xl-3 col-lg-3 col-md-11 col-sm-12">
+                <div class=" form-group mt-3 mt-lg-3 col col-xl-3 col-lg-3 col-md-11 col-sm-12">
                     <input type="text" class="form-control " id="searchKeyword" placeholder="Search..">                    
                 </div>
                 
-                <div class=" form-group mt-xl-3 mt-lg-3 col col-xl-1 col-lg-3 col-md-12 col-sm-12">
+                <div class=" form-group mt-3 mt-lg-3 col col-xl-1 col-lg-3 col-md-12 col-sm-12">
                     <button type="submit" id="btnSearch" class="btn" aria-hidden="true"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </nav>
         
         <main>
+<<<<<<< HEAD
+            
+                <div class="results">
+=======
             <div class="mt-4 results">
+>>>>>>> 7150e55a2e70804c8e600f116ea4fd04fff8f795
                     
             </div>
             
+<<<<<<< HEAD
+                <div class="containers container-fluid">
+=======
             <div class="containers container-fluid mt-4">
+>>>>>>> 7150e55a2e70804c8e600f116ea4fd04fff8f795
                         
             </div>
         </main>
 
-        <footer class="card-footer align-bottom justify-content-center mt-5 ">
-            <p class="text-center" id="myFooterText">Web Development Final Project | PDM IT32A | 2020 &copy;</p>
+        <footer class="myFooter card-footer align-bottom justify-content-center mt-5">
+            <p class="text-center myFooterText">Web Development Final Project | PDM IT32A | 2020 &copy;</p>
         </footer>
      
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
