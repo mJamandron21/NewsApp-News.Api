@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 
 .results{
 
   margin-top: 30px;
   margin-bottom: 30px;
 }
-=======
->>>>>>> 7150e55a2e70804c8e600f116ea4fd04fff8f795
 .containers{
   display: grid;
   grid-template-columns: repeat(3,1fr);
