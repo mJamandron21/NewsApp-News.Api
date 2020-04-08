@@ -1,12 +1,14 @@
-.navbar{
+
+
+.topNavBar{
     background: darkslategray;
 }
-nav.container-fluid{
+.lowerNavBar{
     background: teal;
     opacity: 0.8;
 }
 
-footer.card-footer{
+.myFooter{
     background: teal;
     opacity: 0.8;
 }
@@ -15,12 +17,33 @@ footer.card-footer{
     border: 0;
     background: transparent;
 }
+.fa-toggle-on{
+
+    color: black;
+}
+
+.fa-toggle-off{
+    color: white;
+}
+
+.fa-search{
+    color: darkslategray;
+}
+
 /* DEFAULT */
-#topNav .defaultMode .navbar{
+#topNav.defaultMode{
+    background-color: white;
+}
+#topNav .defaultMode .topNavBar{
     transition: 0.25s ease-in-out;
     background: darkslategray;
 }
-#topNav .defaultMode .navbar-brand, .navbar-item, #myFooterText{
+
+#topNav.defaultMode .lowerNavBar, .myFooter{
+    background-color: teal;
+    opacity: 0.8;
+}
+#topNav .defaultMode .navbar-brand, .navbar-item, .myFooterText{
     color: white;
 }
 #topNav.defaultMode .myToggler{
@@ -29,33 +52,64 @@ footer.card-footer{
     font-size: 28px;
 }
 
+#topNav.defaultMode .results{
+
+    background-color: white;
+    color: black;
+}
+
+#topNav.defaultMode .containers{
+    background-color: white;
+    color: black;
+}
+
+
+
+
 /* LIGHTMODE */
-#topNav.lightMode .navbar, .container-fluid{
+#topNav.lightMode{
+    background-color: black;
+}
+#topNav.lightMode .topNavBar, .lowerNavBar{
     transition: 0.25s ease-in-out;
-    background: white;
+    background:black;
+    opacity: 1;
+} 
+
+#topNav.lightMode .navbar-brand, .nav-item, .myFooterText{
+    color: white;
 }
 
-#topNav.lightMode footer{
-    transition: 0.25s ease-in-out;
-    background: white;
-}
-
-#topNav.lightMode .navbar-brand, .nav-item, #myFooterText{
-    color: black;
-}
-
-/* #topNav.lightmode #myFooterText{
-    color: black;
-} */
 
 #topNav.lightMode .myToggler{
 
-    color: black;
+    color: white;
     font-size: 28px;
     padding-top: 2px;
 }
 
 #topNav.lightMode .myTogglerNav{
 
-    border-color: black;
+    border-color: white;
 }
+
+#topNav.lightMode .fa-search{
+    color: white;
+}
+
+#topNav.lightMode .results{
+
+    background-color: black;
+    color: white;
+}
+
+#topNav.lightMode .containers{
+    background-color:black;
+    color: white;
+}
+
+#topNav.lightMode .myFooter{
+    transition: 0.25s ease-in-out;
+    background-color:black;
+    opacity: 1;
+} 

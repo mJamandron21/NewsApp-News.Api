@@ -1,5 +1,9 @@
 
+.results{
 
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 .containers{
   display: grid;
   grid-template-columns: repeat(3,1fr);
