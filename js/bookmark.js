@@ -19,8 +19,13 @@ function fetchBookmark(){
                         <p class="card-text">${bookmark.source.name}</p>
                         <p class="card-text">${bookmark.content}</p>
                         <a href="${bookmark.url}" class="card-link">Go to this Page</a>
-                        <button style="border: none;"><i class="fa fa-bookmark" id="${containerId}"></i></button>
+                       
                     </div>
+                        <div class="card-body">
+
+                        <button style="border: none;"><i class="fa fa-bookmark" id="${containerId}"></i></button>
+                        </div>
+
                     <div class="card-footer">
                         <small class="text-muted">Published at ${bookmark.publishedAt}</small>
                     </div>
