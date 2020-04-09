@@ -45,7 +45,11 @@ async function getNews(){
                                 <p class="card-text">${article.source.name}</p>
                                 <p class="card-text">${article.content}</p>
                                 <a href="${article.url}" class="card-link">Go to this Page</a>
-                                <button style="border: none;"><i class="fa fa-bookmark" id="${containerId}"></i></button>
+                                
+                            </div>
+                            <div class="card-body">
+
+                            <button style="border: none;"><i class="fa fa-bookmark" id="${containerId}"></i></button>
                             </div>
                             <div class="card-footer">
                                 <small class="text-muted">Published at ${article.publishedAt}</small>
@@ -66,7 +70,10 @@ async function getNews(){
                     <p class="card-text">${article.content}</p>
                     <a href="${article.url}" class="card-link">Go to this Page</a>
                     
-                    <button style="border: none; "><i class="fa fa-bookmark-o" id="${containerId}"></i></button>
+                </div>
+                <div class="card-body">
+
+                <button style="border: none;"><i class="fa fa-bookmark-o" id="${containerId}"></i></button>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">Published at ${article.publishedAt}</small>
