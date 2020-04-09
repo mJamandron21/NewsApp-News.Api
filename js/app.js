@@ -2,8 +2,12 @@ const API_KEY = '09f3023e7b154f1582dbf07379774e0a'
 const COUNTRY_CODE = document.querySelector('#selectCountry')
 const CATEGORY_CODE = document.querySelector('#selectCategory')
 const KEYWORDS = document.querySelector('#searchKeyword')
-const PAGE= 1;
+const loadPage = document.querySelector('#load')
+const load = document.querySelector('#load')
+let PAGE= 1;
 const PAGE_SIZE = 50;
+let loadCounter = 0
+let resultCount = 0
 let bookmarkPage = []
 let totalResults = 0
 let bool = 0;
@@ -27,6 +31,8 @@ async function getNews(){
     bookmarkPage = bookmarkPage.concat(articles)   
     let result =`<p class="h4">You have a total result of ${totalResults}</p>`
 
+        loadCounter = articles.length
+        resultCount += articles.length
     articles.forEach(article => {        
         if(bookmarks!=null){
             bookmarks.forEach( bookmark =>{
@@ -59,7 +65,8 @@ async function getNews(){
                     <p class="card-text">${article.source.name}</p>
                     <p class="card-text">${article.content}</p>
                     <a href="${article.url}" class="card-link">Go to this Page</a>
-                    <button style="border: none;"><i class="fa fa-bookmark-o" id="${containerId}"></i></button>
+                    
+                    <button style="border: none; "><i class="fa fa-bookmark-o" id="${containerId}"></i></button>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted">Published at ${article.publishedAt}</small>
@@ -71,9 +78,12 @@ async function getNews(){
         containerId++
     })
 
+    loadMoreNews()
     results.innerHTML = result
     containers.innerHTML += li
     console.log(bookmarkPage)
+    loader()
+
 }
 
 search.addEventListener("click", e=> {
@@ -83,7 +93,17 @@ search.addEventListener("click", e=> {
     containerId = 0
     totalResults =0
     containers.innerHTML = ''
+    resultCount = 0
+    loadCounter = 0
+    PAGE = 1
     getNews(e)
+})
+
+loadPage.addEventListener("click", e =>{
+    load.className = 'load-none'
+    PAGE += 1
+    loadCounter = 0
+    getNews()
 })
 
 selectCountry.addEventListener('change', e =>{
@@ -145,3 +165,27 @@ function removeBookmark(){
     //refresh localStorage
     localStorage.setItem("bookmarks",JSON.stringify(bookmarks))
 }
+
+
+function loadMoreNews(){
+    if(loadCounter > 49 && resultCount < 100){
+        //display Load More Button
+        load.className = 'load-page'
+    }
+    else{
+        //Hide Load More Button
+        load.className = 'load-none'
+    }
+}
+//function for spinner load
+function loader(){
+    const spin = document.querySelector('#spinner')
+    if(loadCounter == 0){
+        spin.className = "spinner-border"
+    }
+    else{
+        spin.className = "spinner-border-none"
+    }
+
+}
+

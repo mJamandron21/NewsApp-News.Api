@@ -30,6 +30,11 @@
     color: darkslategray;
 }
 
+.spinner-border{
+
+    color: darkslategray;
+}
+
 /* DEFAULT */
 #topNav.defaultMode{
     background-color: white;
@@ -61,6 +66,20 @@
 #topNav.defaultMode .containers{
     background-color: white;
     color: black;
+}
+
+#topNav.defaultMode .spinner-border{
+
+    color: darkslategray;
+}
+
+#topNav.defaultMode .btnLoad{
+
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    border-style: solid;
+    color: white;
+    box-shadow: none;
 }
 
 
@@ -114,3 +133,17 @@
     background-color:black;
     opacity: 1;
 } 
+
+#topNav.darkMode .spinner-border{
+
+    color: white;
+}
+
+#topNav.darkMode .btnLoad{
+
+    background-color: darkviolet;
+    border-color: darkviolet;
+    box-shadow: none;
+    color: white;
+    border-style: solid;
+}
