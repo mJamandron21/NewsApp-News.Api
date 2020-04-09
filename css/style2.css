@@ -10,12 +10,35 @@
   grid-gap: 1em;
   list-style: none;
 }
-.space{
-  padding: 2.7rem;
+
+.fa-bookmark-o{
+
+  text-align: end;
 }
 .results{
   text-align: center;
 }
+
+.spinnerHead{
+
+  text-align: center;
+}
+.spinner-border-none{
+   display: none;
+}
+
+#load{
+
+  text-align: center;
+}
+
+.load-none button{ 
+  display: none;
+}
+
+.load-none { 
+    display: none;
+  }
 
 @media (max-width: 991.98px){
   .containers{
