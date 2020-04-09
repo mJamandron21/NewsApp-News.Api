@@ -66,49 +66,50 @@
 
 
 
-/* LIGHTMODE */
-#topNav.lightMode{
+/* DARKMODE */
+
+#topNav.darkMode{
     background-color: black;
 }
-#topNav.lightMode .topNavBar, .lowerNavBar{
+#topNav.darkMode .topNavBar, .lowerNavBar{
     transition: 0.25s ease-in-out;
     background:black;
     opacity: 1;
 } 
 
-#topNav.lightMode .navbar-brand, .nav-item, .myFooterText{
+#topNav.darkMode .navbar-brand, .nav-item, .myFooterText{
     color: white;
 }
 
 
-#topNav.lightMode .myToggler{
+#topNav.darkMode .myToggler{
 
     color: white;
     font-size: 28px;
     padding-top: 2px;
 }
 
-#topNav.lightMode .myTogglerNav{
+#topNav.darkMode .myTogglerNav{
 
     border-color: white;
 }
 
-#topNav.lightMode .fa-search{
+#topNav.darkMode .fa-search{
     color: white;
 }
 
-#topNav.lightMode .results{
+#topNav.darkMode .results{
 
     background-color: black;
     color: white;
 }
 
-#topNav.lightMode .containers{
+#topNav.darkMode .containers{
     background-color:black;
     color: white;
 }
 
-#topNav.lightMode .myFooter{
+#topNav.darkMode .myFooter{
     transition: 0.25s ease-in-out;
     background-color:black;
     opacity: 1;

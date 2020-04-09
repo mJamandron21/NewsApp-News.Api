@@ -3,7 +3,7 @@ const changeTheme = document.querySelector('#switch')
 changeTheme.addEventListener("click", e =>{
     if(changeTheme.className == "fa fa-toggle-on"){
         changeTheme.className = "fa fa-toggle-off"
-        topNav.className = "lightMode"
+        topNav.className = "darkMode"
     }
     else{
         changeTheme.className = "fa fa-toggle-on"
@@ -11,3 +11,4 @@ changeTheme.addEventListener("click", e =>{
     }
     e.preventDefault()
 })
+
