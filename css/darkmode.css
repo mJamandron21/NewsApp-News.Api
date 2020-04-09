@@ -1,0 +1,149 @@
+
+
+.topNavBar{
+    background: darkslategray;
+}
+.lowerNavBar{
+    background: teal;
+    opacity: 0.8;
+}
+
+.myFooter{
+    background: teal;
+    opacity: 0.8;
+}
+.toggleBtn{
+    padding: 8px;
+    border: 0;
+    background: transparent;
+}
+.fa-toggle-on{
+
+    color: black;
+}
+
+.fa-toggle-off{
+    color: white;
+}
+
+.fa-search{
+    color: darkslategray;
+}
+
+.spinner-border{
+
+    color: darkslategray;
+}
+
+/* DEFAULT */
+#topNav.defaultMode{
+    background-color: white;
+}
+#topNav .defaultMode .topNavBar{
+    transition: 0.25s ease-in-out;
+    background: darkslategray;
+}
+
+#topNav.defaultMode .lowerNavBar, .myFooter{
+    background-color: teal;
+    opacity: 0.8;
+}
+#topNav .defaultMode .navbar-brand, .navbar-item, .myFooterText{
+    color: white;
+}
+#topNav.defaultMode .myToggler{
+
+    color: transparent;
+    font-size: 28px;
+}
+
+#topNav.defaultMode .results{
+
+    background-color: white;
+    color: black;
+}
+
+#topNav.defaultMode .containers{
+    background-color: white;
+    color: black;
+}
+
+#topNav.defaultMode .spinner-border{
+
+    color: darkslategray;
+}
+
+#topNav.defaultMode .btnLoad{
+
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    border-style: solid;
+    color: white;
+    box-shadow: none;
+}
+
+
+
+
+/* DARKMODE */
+
+#topNav.darkMode{
+    background-color: black;
+}
+#topNav.darkMode .topNavBar, .lowerNavBar{
+    transition: 0.25s ease-in-out;
+    background:black;
+    opacity: 1;
+} 
+
+#topNav.darkMode .navbar-brand, .nav-item, .myFooterText{
+    color: white;
+}
+
+
+#topNav.darkMode .myToggler{
+
+    color: white;
+    font-size: 28px;
+    padding-top: 2px;
+}
+
+#topNav.darkMode .myTogglerNav{
+
+    border-color: white;
+}
+
+#topNav.darkMode .fa-search{
+    color: white;
+}
+
+#topNav.darkMode .results{
+
+    background-color: black;
+    color: white;
+}
+
+#topNav.darkMode .containers{
+    background-color:black;
+    color: white;
+}
+
+#topNav.darkMode .myFooter{
+    transition: 0.25s ease-in-out;
+    background-color:black;
+    opacity: 1;
+} 
+
+#topNav.darkMode .spinner-border{
+
+    color: white;
+}
+
+#topNav.darkMode .btnLoad{
+
+    background-color: darkviolet;
+    border-color: darkviolet;
+    box-shadow: none;
+    color: white;
+    border-style: solid;
+}
